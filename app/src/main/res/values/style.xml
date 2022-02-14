@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="name">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="small_text">
+        <item name="android:textColor">@color/back_name</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+</resources>

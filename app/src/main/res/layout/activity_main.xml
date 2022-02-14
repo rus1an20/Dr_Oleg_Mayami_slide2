@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF8"
+    tools:context=".MainActivity">
+<!--top panel-->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@color/back_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dr_oleg_mayami"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/dental_surgeon"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+<!--logo-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_dent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/halanely"
+        android:text="@string/dental_clinic"
+        android:textColor="@color/back_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/youe_friendly_dental_friend"
+        android:textColor="@color/back_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+<!--buttons-->
+    <Button
+        android:id="@+id/button"
+        style="@style/small_text"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_whatsapp_icon"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/whatsapp"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_call_icon"
+        android:fontFamily="@font/open_sans"
+        android:padding="20dp"
+        android:text="@string/to_call"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/small_text"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_mail_icon"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"
+        android:text="@string/email_us"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/small_text"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_telegram_icon"
+        android:paddingTop="21dp"
+        android:paddingBottom="23dp"
+        android:text="@string/telegram"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/small_text"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_web_icon"
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp"
+        android:text="@string/visit_website"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/small_text"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_st"
+        android:drawableTop="@drawable/ic_phonebook_icon"
+        android:paddingTop="21dp"
+        android:paddingBottom="23dp"
+        android:text="@string/save_contact"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+<!--location-->
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/our_location"
+        android:textColor="@color/button_text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <TextView
+        style="@style/small_text"
+        android:id="@+id/shopping_center_Asia_Maill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/button_text_color"
+        android:text="@string/shopping_center_asia_mall_1st_floor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        style="@style/name"
+        android:id="@+id/open_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_map"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/shopping_center_Asia_Maill"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="12sp"
+        android:textColor="@color/open_map_color"/>
+    
+    <View
+        android:layout_width="74dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/open_map"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/button_text_color"
+        android:layout_marginStart="16dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">UI task part 2</string>
+    <string name="dr_oleg_mayami" translatable="false">Dr. Oleg Mayami</string>
+    <string name="dental_surgeon" translatable="false">Dental surgeon</string>
+    <string name="shopping_center" translatable="false">Shopping center Asia Mall 1st floor</string>
+    <string name="open_map" translatable="false">Open map</string>
+    <string name="youe_friendly_dental_friend">Youe friendly Dental Friend</string>
+    <string name="todo">TODO</string>
+    <string name="dental_clinic">Dental Clinic</string>
+    <string name="to_call">To call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_us">Email us</string>
+    <string name="visit_website">Visit website</string>
+    <string name="telegram">Telegram</string>
+    <string name="save_contact">Save contact</string>
+    <string name="our_location">Our Location</string>
+    <string name="shopping_center_asia_mall_1st_floor">Shopping center Asia Mall\n1st floor</string>
+</resources>
